@@ -161,22 +161,17 @@
           return error_msg.includes("AbortError");
         }
       }
-        
-        if (!window.chrome) {
+                if (!window.chrome) {
           buttons_container.innerHTML = `<p><b>Error: You are not running a Chromium-based browser.</b></p>`;
           return;
         }
-        else if (detected.length === 0) {
-          buttons_container.innerHTML = `<p><b>Error: No supported extensions detected.</b></p>`;
-          buttons_container.innerHTML += `<p style="margin-top: -16px;">If you want support for a specific extension added, please make an issue on the <a href="https://github.com/ading2210/dextensify">Github repository</a>, and provide the extension ID and manifest.</p>`;
-          return;
-        }
+ 
         else {
           buttons_container.innerHTML = ""
         }
 
 {
-          let button = document.createElement("button");
+.createElement("button");
           button.innerText = `Freeze ${extension.name}`;
           button.onclick = () => {
             button_handler(extension);
@@ -226,20 +221,12 @@
   </head>
   <body data-new-gr-c-s-check-loaded="8.908.0" data-gr-ext-installed="">
     <div id="main_div">
-      <h1 style="margin-top: 8px">Dextensify</h1>
+      <h1 style="margin-top: 8px">Kanye Westify</h1>
       <p>Kanye west</p>
       <h2>Yip Yap</h2>
       <ol>
-        <li>Open chrome://extensions in a new tab. Keep this page open.</li>
-        <li>Go to the settings page for the extension you want to disable.</li>
-        <li>On the Dextensify page, click the "freeze extension" button. Immediately switch back to the chrome://extensions tab.</li>
-        <li>Back on the chrome://extensions page, spam the "allow access to file URLs" switch for a few seconds.</li>
-        <li>The extension should now be temporarily disabled. For this 
-effect to persist, flip the "allow access to file URLs" again every few 
-minutes, or if pages start getting blocked again.</li>
-        <li>You may also need to reopen this page every once in a while to prevent an unavoidable memory leak from crashing the system.</li>
-      </ol>
-      <p>During this process, your Chromebook may hang momentarily. This is normal, and it should resolve itself after a few seconds.</p>
+        
+      <p>ok you the king burger king</p>
       <div id="buttons_container"><p><b>Error: Skill issue.</b></p></div>
       <br>
       <hr>
