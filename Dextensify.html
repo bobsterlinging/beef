@@ -161,22 +161,7 @@
           return error_msg.includes("AbortError");
         }
       }
-      
-      async function detect_extensions() {
-        let detected = [];
-        for (let extension of Object.values(extensions)) {
-          let exists = await check_url(extension.url);
-          if (exists) {
-            detected.push(extension);
-          }
-        }
-        return detected;
-      }
-
-      async function main() {
-        let detected = await detect_extensions();
-        let buttons_container = from_id("buttons_container")
-
+        
         if (!window.chrome) {
           buttons_container.innerHTML = `<p><b>Error: You are not running a Chromium-based browser.</b></p>`;
           return;
